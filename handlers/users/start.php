@@ -7,7 +7,7 @@ if($text=="/start" || mb_stripos($text,"/start")!==false){
       'chat_id'=>$chat_id,
       'text'=>"<b>🍀 Assalomu Alaykum!</b> 
       
-<b>✨ Botimizga hush kelibsiz <i>",
+<i>✨ Botimizga hush kelibsiz </i>",
       'reply_markup'=>$main_keyboard,
     ]);
     step($user_id, 'main');

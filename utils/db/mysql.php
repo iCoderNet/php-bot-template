@@ -34,11 +34,9 @@ class Database {
             balance BIGINT NOT NULL DEFAULT 0,
             referral_count BIGINT NOT NULL DEFAULT 0,
             referral_balance BIGINT NOT NULL DEFAULT 0,
-            vote_count BIGINT NOT NULL DEFAULT 0,
             referral_bonus BIGINT NOT NULL DEFAULT 0,
             step VARCHAR(255) NOT NULL DEFAULT '0',
             step_admin VARCHAR(255) NOT NULL DEFAULT '0',
-            vote_session_key VARCHAR(255) NULL,
             created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
         );
@@ -182,7 +180,7 @@ class Database {
     }
 
     function getUser($user_id){
-        $user_info = $this->select("users", ['telegram_id'=>$user_id], fetchone:true);
+        $user_info = $this->select("users", ['telegram_id'=>$user_id], $fetchone=true);
         return $user_info;
     }
 }

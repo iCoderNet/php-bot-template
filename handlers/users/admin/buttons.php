@@ -15,3 +15,12 @@ $back_keyboard = json_encode([
     ]
 ]);
 
+
+$sendPost_keyboard = json_encode([
+    'resize_keyboard' => true,
+    'keyboard' => [
+        [['text' => "✅ Tastiqlash"]],
+        [['text' => "⬅️ Ortga"]],
+    ]
+]);
+
