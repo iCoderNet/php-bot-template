@@ -12,6 +12,7 @@ if($text=="/start" || mb_stripos($text,"/start")!==false){
     ]);
     step($user_id, 'main');
     stepAdmin($user_id, 'main');
+    exit();
 }
 
 ?>

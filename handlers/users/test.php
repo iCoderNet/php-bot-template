@@ -5,6 +5,7 @@ if($text=="TEST BUTTON"){
       'chat_id'=>$chat_id,
       'text'=>"BU TEST UCHUN BO'LIM",
     ]);
+    exit();
 }
 
 ?>

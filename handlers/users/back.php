@@ -8,6 +8,7 @@ if($text=="🔙 Orqaga"){
       'text'=>"<b>🔽 Quyidagi tugmalardan foydalanishingiz mumkin</b>",
       'reply_markup'=>$main_keyboard,
     ]);
+    exit();
 }
 
 ?>
